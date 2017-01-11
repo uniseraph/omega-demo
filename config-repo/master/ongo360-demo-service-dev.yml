@@ -1,0 +1,49 @@
+server:
+  port: 8082
+
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: ongo360
+    password: ongo360
+    virtual-host: ongo360_vhost
+
+mycat:
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://mycat:3306/sk_dev?useOldAliasMetadataBehavior=true
+    username: root
+    password: rootpass
+
+task:
+  lockPath: /task
+
+zookeeper:
+  servers: 127.0.0.1:2181
+  sessionTimeout: 30000
+
+mybatis:
+  mapper-locations: classpath:/mybatis/*.xml
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 5000
+
+default:
+  ribbon:
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 2
+    OkToRetryOnAllOperations: true // All operations should be idempotent
+
+logging:
+  path: /var/log
+  level:
+    root: WARN
+    com:
+      ongo360:
+        demo: DEBUG

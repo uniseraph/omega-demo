@@ -1,0 +1,49 @@
+package com.omega.demo.service.domain;
+
+import com.omega.demo.api.bean.User;
+import com.omega.demo.service.dao.UserDao;
+import com.omega.framework.task.TaskConsumer;
+import com.omega.framework.task.TaskQueue;
+import com.omega.framework.task.bean.Task;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.util.Map;
+import java.util.UUID;
+
+/**
+ * Created by wuzhengtao on 16/12/6.
+ */
+
+@Service
+public class UserEntity {
+
+    @Autowired
+    private UserDao userDao;
+
+    @Autowired
+    private TaskQueue taskQueue;
+
+    public User getById(String id) {
+        return userDao.getById(id);
+    }
+
+    @Transactional
+    public void create(User user) {
+        // userDao.create();
+
+        Task task = new Task(UUID.randomUUID().toString(), "sendEmail");
+        task.data("userId", "2");
+        taskQueue.addTask(task);
+    }
+
+    @TaskConsumer("sendEmail")
+    public void sendEmail(Task task) {
+        // check if already executed
+
+        Map<String, String> dataMap = task.dataMap;
+        System.out.println("Sending email to user " + dataMap.get("userId"));
+    }
+
+}
