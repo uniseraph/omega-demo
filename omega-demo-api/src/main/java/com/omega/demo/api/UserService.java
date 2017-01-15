@@ -2,8 +2,6 @@ package com.omega.demo.api;
 
 import com.omega.demo.api.bean.User;
 import org.springframework.cloud.netflix.feign.FeignClient;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
  * Created by wuzhengtao on 16/12/6.
  */
 
-@FeignClient(value = "omega-demo-service")
+@FeignClient(value = "ongo360-demo-service")
 public interface UserService {
 
     @RequestMapping("/user/{id}")

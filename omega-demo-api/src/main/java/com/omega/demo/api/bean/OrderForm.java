@@ -9,12 +9,59 @@ import java.util.List;
  */
 public class OrderForm {
 
-    public String id;
-    public String userId;
-    public String number;
-    public BigDecimal amount;
-    public Date gmtCreated;
+    private String id;
+    private String userId;
+    private String number;
+    private BigDecimal amount;
+    private Date gmtCreated;
+    private List<OrderDetail> detailList;
 
-    public List<OrderDetail> detailList;
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
+
+    public String getNumber() {
+        return number;
+    }
+
+    public void setNumber(String number) {
+        this.number = number;
+    }
+
+    public BigDecimal getAmount() {
+        return amount;
+    }
+
+    public void setAmount(BigDecimal amount) {
+        this.amount = amount;
+    }
+
+    public Date getGmtCreated() {
+        return gmtCreated;
+    }
+
+    public void setGmtCreated(Date gmtCreated) {
+        this.gmtCreated = gmtCreated;
+    }
+
+    public List<OrderDetail> getDetailList() {
+        return detailList;
+    }
+
+    public void setDetailList(List<OrderDetail> detailList) {
+        this.detailList = detailList;
+    }
 
 }

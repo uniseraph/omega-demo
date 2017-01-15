@@ -1,11 +1,11 @@
 package com.omega.demo.service.domain;
 
 import com.omega.demo.service.dao.UserDao;
-import com.ongo360.demo.api.GUID;
-import com.ongo360.demo.api.bean.User;
-import com.ongo360.demo.task.TaskConsumer;
-import com.ongo360.demo.task.TaskQueue;
-import com.ongo360.demo.task.bean.Task;
+import com.omega.demo.api.GUID;
+import com.omega.demo.api.bean.User;
+import com.omega.framework.task.TaskConsumer;
+import com.omega.framework.task.TaskQueue;
+import com.omega.framework.task.bean.Task;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
