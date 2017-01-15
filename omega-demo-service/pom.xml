@@ -19,16 +19,14 @@
     <dependency>
       <groupId>com.omega.framework</groupId>
       <artifactId>omega-framework-datasource</artifactId>
-      <version>${parent.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>com.omega.demo</groupId>
-      <artifactId>omega-demo-api</artifactId>
-      <version>${parent.version}</version>
     </dependency>
     <dependency>
       <groupId>com.omega.framework</groupId>
       <artifactId>omega-framework-task-common</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.omega.demo</groupId>
+      <artifactId>omega-demo-api</artifactId>
       <version>${parent.version}</version>
     </dependency>
     <dependency>
