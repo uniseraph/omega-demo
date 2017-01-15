@@ -46,7 +46,7 @@ default:
 logging:
   path: /var/log
   level:
-    root: WARN
+    root: INFO
     com:
       ongo360:
         demo: DEBUG

@@ -30,7 +30,7 @@ public class HomeController {
     public ModelAndView index() {
         ModelAndView mv = new ModelAndView("index");
 
-        User user = userService.getById("2");
+        User user = userService.getById("User02");
         if (user == null) {
             mv.addObject("result", "Not Found");
             return mv;
