@@ -82,5 +82,7 @@
         <module>omega-demo-api</module>
         <module>omega-demo-service</module>
         <module>omega-demo-portal</module>
+        <module>omega-demo-assembly</module>
+
     </modules>
 </project>

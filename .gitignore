@@ -23,12 +23,14 @@
 
 ## File-based project format:
 *.iws
-
+*.iml
 ## Plugin-specific files:
 
 # IntelliJ
 /out/
 omega-demo.ipr
+omega-demo-portal/omega-demo-portal.iml
+omega-demo-service/omega-demo-service.iml
 # mpeltonen/sbt-idea plugin
 .idea_modules/
 
@@ -41,3 +43,7 @@ crashlytics.properties
 crashlytics-build.properties
 fabric.properties
 .sass-cache
+
+
+.DS_Store
+/target/
