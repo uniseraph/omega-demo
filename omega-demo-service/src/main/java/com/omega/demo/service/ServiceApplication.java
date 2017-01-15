@@ -13,7 +13,7 @@ import org.springframework.context.annotation.ComponentScan;
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableCircuitBreaker
-@ComponentScan({"com.ongo360.demo.service"})
+@ComponentScan({"com.omega.demo.service"})
 public class ServiceApplication {
     public static void main(String[] args) {
         SpringApplication.run(ServiceApplication.class, args);

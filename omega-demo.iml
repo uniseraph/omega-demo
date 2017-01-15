@@ -659,7 +659,119 @@ under the License.
           <root url="jar:///Users/wuzhengtao/.m2/repository/org/springframework/spring-webmvc/4.3.2.RELEASE/spring-webmvc-4.3.2.RELEASE.jar!/"/>
         </CLASSES>
       </library> 
-    </orderEntry> 
+    </orderEntry>  
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///Users/wuzhengtao/.m2/repository/io/springfox/springfox-swagger2/2.2.2/springfox-swagger2-2.2.2.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///Users/wuzhengtao/.m2/repository/org/mapstruct/mapstruct/1.0.0.CR1/mapstruct-1.0.0.CR1.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///Users/wuzhengtao/.m2/repository/io/swagger/swagger-annotations/1.5.3/swagger-annotations-1.5.3.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///Users/wuzhengtao/.m2/repository/io/swagger/swagger-models/1.5.3/swagger-models-1.5.3.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///Users/wuzhengtao/.m2/repository/io/springfox/springfox-spi/2.2.2/springfox-spi-2.2.2.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///Users/wuzhengtao/.m2/repository/io/springfox/springfox-core/2.2.2/springfox-core-2.2.2.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///Users/wuzhengtao/.m2/repository/com/google/guava/guava/18.0/guava-18.0.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///Users/wuzhengtao/.m2/repository/org/aspectj/aspectjrt/1.8.9/aspectjrt-1.8.9.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///Users/wuzhengtao/.m2/repository/org/aspectj/aspectjweaver/1.8.9/aspectjweaver-1.8.9.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///Users/wuzhengtao/.m2/repository/org/springframework/plugin/spring-plugin-core/1.2.0.RELEASE/spring-plugin-core-1.2.0.RELEASE.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///Users/wuzhengtao/.m2/repository/org/springframework/plugin/spring-plugin-metadata/1.2.0.RELEASE/spring-plugin-metadata-1.2.0.RELEASE.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///Users/wuzhengtao/.m2/repository/org/springframework/hateoas/spring-hateoas/0.20.0.RELEASE/spring-hateoas-0.20.0.RELEASE.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///Users/wuzhengtao/.m2/repository/io/springfox/springfox-schema/2.2.2/springfox-schema-2.2.2.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///Users/wuzhengtao/.m2/repository/io/springfox/springfox-swagger-common/2.2.2/springfox-swagger-common-2.2.2.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///Users/wuzhengtao/.m2/repository/io/springfox/springfox-spring-web/2.2.2/springfox-spring-web-2.2.2.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///Users/wuzhengtao/.m2/repository/io/springfox/springfox-swagger-ui/2.2.2/springfox-swagger-ui-2.2.2.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
   </component>  
   <component name="ModuleRootManager"/>  
   <!-- If it's a war project:

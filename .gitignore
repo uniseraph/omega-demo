@@ -24,6 +24,9 @@
 ## File-based project format:
 *.iws
 *.iml
+
+omega-demo.iml
+**/*.iml
 ## Plugin-specific files:
 
 # IntelliJ

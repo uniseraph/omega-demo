@@ -37,8 +37,8 @@ public class HomeController {
         }
 
         Greeting g = new Greeting();
-        g.nick = "Mr. " + user.name;
-        g.message = "nice to meet you";
+        g.setNick("Mr. " + user.getName());
+        g.setMessage("nice to meet you");
 
         mv.addObject("result", echoService.echo("TEST", g));
         return mv;
