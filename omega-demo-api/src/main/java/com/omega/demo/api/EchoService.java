@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
  * Created by wuzhengtao on 16/12/6.
  */
 
-@FeignClient(value = "ongo360-demo-service", fallback = EchoService.HystrixEchoService.class)
+@FeignClient(value = "omega-demo-service", fallback = EchoService.HystrixEchoService.class)
 public interface EchoService {
 
     @RequestMapping(value = "/echo/{foo}", method = RequestMethod.POST)
