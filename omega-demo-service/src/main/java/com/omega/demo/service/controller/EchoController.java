@@ -12,7 +12,7 @@ public class EchoController {
 
     @RequestMapping(value="/echo/{foo}", method = RequestMethod.POST)
     public String echo(@PathVariable("foo") String foo, @RequestBody Greeting greeting) {
-        return foo + ": " + greeting.nick + ", " + greeting.message;
+        return foo + ": " + greeting.getNick() + ", " + greeting.getMessage();
     }
 
 }

@@ -1,16 +1,16 @@
 package com.omega.demo.service.domain;
 
-import com.omega.demo.api.bean.User;
 import com.omega.demo.service.dao.UserDao;
-import com.omega.framework.task.TaskConsumer;
-import com.omega.framework.task.TaskQueue;
-import com.omega.framework.task.bean.Task;
+import com.ongo360.demo.api.GUID;
+import com.ongo360.demo.api.bean.User;
+import com.ongo360.demo.task.TaskConsumer;
+import com.ongo360.demo.task.TaskQueue;
+import com.ongo360.demo.task.bean.Task;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Map;
-import java.util.UUID;
 
 /**
  * Created by wuzhengtao on 16/12/6.
@@ -31,9 +31,9 @@ public class UserEntity {
 
     @Transactional
     public void create(User user) {
-        // userDao.create();
+        userDao.create(user);
 
-        Task task = new Task(UUID.randomUUID().toString(), "sendEmail");
+        Task task = new Task("sendEmail");
         task.data("userId", "2");
         taskQueue.addTask(task);
     }

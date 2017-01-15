@@ -13,8 +13,11 @@ mycat:
   datasource:
     driverClassName: com.mysql.jdbc.Driver
     url: jdbc:mysql://mycat:3306/sk_dev?useOldAliasMetadataBehavior=true
-    username: root
-    password: rootpass
+    username: mycat
+    password: mycat
+    tomcat:
+      testOnBorrow: true
+  servers: localhost:8066
 
 task:
   lockPath: /task

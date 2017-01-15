@@ -1,8 +1,8 @@
 package com.omega.demo.service.domain;
 
-import com.omega.demo.api.bean.OrderDetail;
-import com.omega.demo.api.bean.OrderForm;
 import com.omega.demo.service.dao.OrderDao;
+import com.ongo360.demo.api.bean.OrderDetail;
+import com.ongo360.demo.api.bean.OrderForm;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -23,7 +23,7 @@ public class OrderEntity {
     public void createOrder(OrderForm o) {
         dao.createOrderForm(o);
 
-        for (OrderDetail d : o.detailList) {
+        for (OrderDetail d : o.getDetailList()) {
             dao.createOrderDetail(d);
         }
     }
@@ -34,7 +34,7 @@ public class OrderEntity {
             return null;
         }
 
-        o.detailList = dao.getOrderDetailListByOrderFormId(id);
+        o.setDetailList(dao.getOrderDetailListByOrderFormId(id));
         return o;
     }
 

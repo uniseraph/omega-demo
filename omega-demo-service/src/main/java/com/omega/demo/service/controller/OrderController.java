@@ -1,6 +1,7 @@
 package com.omega.demo.service.controller;
 
 import com.omega.demo.api.GUID;
+import com.omega.demo.api.bean.OrderDetail;
 import com.omega.demo.api.bean.OrderForm;
 import com.omega.demo.api.bean.User;
 import com.omega.demo.api.error.CommonError;
@@ -11,6 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
@@ -37,7 +39,7 @@ public class OrderController {
         return orderEntity.getOrderFormListByUserId(userId);
     }
 
-    @RequestMapping(value="/testOrder")
+    @RequestMapping(value="/testOrder/{userId}")
     public void testCreate(@PathVariable("userId") String userId) {
         User user = userEntity.getById(userId);
         if (user == null) {
@@ -45,10 +47,23 @@ public class OrderController {
         }
 
         OrderForm o = new OrderForm();
-        o.id = generateId(user.zoneCode);
-        o.userId = userId;
-        o.number = "xxx";
-        o.amount = new BigDecimal(new Random().nextInt(500));
+        o.setId(generateId(user.getZoneCode()));
+        o.setUserId(userId);
+        o.setNumber("xxx");
+        o.setAmount(new BigDecimal(new Random().nextInt(500)));
+
+        OrderDetail d = new OrderDetail();
+        d.setId(generateId(user.getZoneCode()));
+        d.setOrderFormId(o.getId());
+        d.setItemNo("HK001");
+        d.setPrice(new BigDecimal(100));
+        d.setQty(2);
+        d.setAmount(new BigDecimal(200));
+
+        List<OrderDetail> detailList = new ArrayList<>();
+        detailList.add(d);
+        o.setDetailList(detailList);
+
         orderEntity.createOrder(o);
     }
 
