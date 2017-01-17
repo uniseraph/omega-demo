@@ -8,12 +8,44 @@ drop function if exists getTaskZoneCode;
 insert into User
 (id, name, zoneCode)
 values
-('User01', 'User01', '01'),
-('User02', 'User02', '02'),
-('User03', 'User03', '03'),
-('User04', 'User04', '04'),
-('User05', 'User05', '05'),
-('User06', 'User06', '06'),
-('User07', 'User07', '07'),
-('User08', 'User08', '08'),
+('User01', 'User01', '01');
+
+insert into User
+(id, name, zoneCode)
+values
+('User02', 'User02', '02');
+
+insert into User
+(id, name, zoneCode)
+values
+('User03', 'User03', '03');
+
+insert into User
+(id, name, zoneCode)
+values
+('User04', 'User04', '04');
+
+insert into User
+(id, name, zoneCode)
+values
+('User05', 'User05', '05');
+
+insert into User
+(id, name, zoneCode)
+values
+('User06', 'User06', '06');
+
+insert into User
+(id, name, zoneCode)
+values
+('User07', 'User07', '07');
+
+insert into User
+(id, name, zoneCode)
+values
+('User08', 'User08', '08');
+
+insert into User
+(id, name, zoneCode)
+values
 ('User09', 'User09', '09');
