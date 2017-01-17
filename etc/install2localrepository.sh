@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-rm ~/.m2/repository/com/omega/framework/omega-demo
-rm ~/.m2/repository/com/omega/framework/omega-demo-api
+rm ~/.m2/repository/com/omega/demo/omega-demo
+rm ~/.m2/repository/com/omega/demo/omega-demo-api
 
 
 
