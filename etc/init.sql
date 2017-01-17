@@ -2,6 +2,8 @@ create database if not exists sk_dev default character set utf8 collate utf8_gen
 
 use sk_dev;
 
+drop function if exists getTaskZoneCode;
+
 drop table if exists User;
 create table User (
     id varchar(40) not null,
