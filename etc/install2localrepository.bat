@@ -1,6 +1,6 @@
 
-rmdir /S /Q "%USERPROFILE%\.m2\repository\com\omega\demo\omega-demo"
-rmdir /S /Q "%USERPROFILE%\.m2\repository\com\omega\demo\omega-demo-api"
+rmdir /S /Q "%M2_HOME%\.m2\repository\com\omega\demo\omega-demo"
+rmdir /S /Q "%M2_HOME%\.m2\repository\com\omega\demo\omega-demo-api"
 
 
 
